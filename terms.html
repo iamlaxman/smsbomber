@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#faf8f5">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="SMS Bomber Nepal — Terms of Use">
+    <title>Terms of Use — SMS Bomber Nepal</title>
+    <style>
+        :root {
+            --bg: #faf8f5;
+            --surface: #ffffff;
+            --surface-alt: #f0ebe3;
+            --border: #1a1a1a;
+            --text: #1a1a1a;
+            --text-muted: #6b6b6b;
+            --primary: #ff6b35;
+            --primary-light: #ff8c5a;
+            --secondary: #4ecdc4;
+            --accent: #ffe66d;
+            --danger: #ff4757;
+            --success: #2ed573;
+            --info: #3b82f6;
+            --warning: #ffb800;
+            --shadow: 5px 5px 0px #1a1a1a;
+            --shadow-sm: 3px 3px 0px #1a1a1a;
+            --shadow-lg: 8px 8px 0px #1a1a1a;
+            --transition: all 0.15s ease;
+            --font-heading: 'Clash Display', 'Segoe UI', system-ui, sans-serif;
+            --font-body: 'Satoshi', 'Segoe UI', system-ui, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            line-height: 1.7;
+            background-image: radial-gradient(circle, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+            background-size: 24px 24px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 24px;
+            border-bottom: 3px solid var(--border);
+            background: var(--surface);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            gap: 16px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            text-decoration: none;
+            color: var(--text);
+            flex-shrink: 0;
+        }
+
+        .nav-logo svg {
+            width: 30px;
+            height: 30px;
+            flex-shrink: 0;
+        }
+
+        .nav-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border: 2px solid var(--border);
+            background: var(--surface);
+            color: var(--text);
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .nav-back:hover {
+            transform: translate(-1px, -1px);
+            box-shadow: var(--shadow);
+        }
+
+        .nav-back svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* ===== CONTENT ===== */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px 60px;
+            width: 100%;
+        }
+
+        .page-title {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid var(--border);
+        }
+
+        .page-title h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(1.6rem, 4vw, 2.2rem);
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+
+        .page-title .update-date {
+            font-weight: 700;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        /* ===== WARNING BOX ===== */
+        .warning-hero {
+            border: 3px solid var(--danger);
+            padding: 20px 24px;
+            background: #fff5f5;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .warning-hero svg {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+            color: var(--danger);
+        }
+
+        .warning-hero h2 {
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1rem;
+            margin-bottom: 6px;
+            color: #8b0000;
+        }
+
+        .warning-hero p {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #8b0000;
+        }
+
+        /* ===== SECTION ===== */
+        .section-block {
+            background: var(--surface);
+            border: 3px solid var(--border);
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .section-block h2 {
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.05rem;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-block h2 svg {
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+        }
+
+        .section-block h3 {
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 0.9rem;
+            margin: 16px 0 8px;
+        }
+
+        .section-block p {
+            margin-bottom: 12px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+
+        .section-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-block ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 12px;
+        }
+
+        .section-block ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 0.88rem;
+        }
+
+        .section-block ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 8px;
+            height: 8px;
+            border: 2px solid var(--border);
+            background: var(--primary);
+        }
+
+        .highlight-box {
+            border: 3px solid var(--danger);
+            background: #fff5f5;
+            padding: 14px 18px;
+            margin: 12px 0;
+            font-weight: 700;
+            font-size: 0.82rem;
+            color: #8b0000;
+        }
+
+        .highlight-box svg {
+            width: 18px;
+            height: 18px;
+            vertical-align: -3px;
+            margin-right: 6px;
+        }
+
+        .info-box {
+            border: 3px solid var(--info);
+            background: #f0f7ff;
+            padding: 14px 18px;
+            margin: 12px 0;
+            font-weight: 600;
+            font-size: 0.82rem;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            border-top: 3px solid var(--border);
+            padding: 20px 24px;
+            background: var(--surface);
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .footer p {
+            font-weight: 600;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        .footer a {
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 14px 40px;
+            }
+            .section-block {
+                padding: 18px;
+            }
+            .warning-hero {
+                padding: 16px;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            .warning-hero svg {
+                margin: 0 auto;
+            }
+            .navbar {
+                padding: 10px 14px;
+            }
+            .nav-logo {
+                font-size: 0.95rem;
+            }
+            .nav-back {
+                font-size: 0.7rem;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            <svg viewBox="0 0 30 30" fill="none">
+                <rect width="30" height="30" rx="0" fill="#ff6b35" stroke="#1a1a1a" stroke-width="3"/>
+                <path d="M7 14L13 20L23 9" stroke="#1a1a1a" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            SMS Bomber Nepal
+        </a>
+        <a href="index.html" class="nav-back">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            Back to Home
+        </a>
+    </nav>
+
+    <!-- ===== CONTENT ===== -->
+    <div class="container">
+
+        <div class="page-title">
+            <h1>Terms of Use</h1>
+            <span class="update-date">Last Updated: July 15, 2026</span>
+        </div>
+
+        <!-- Warning -->
+        <div class="warning-hero">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            <div>
+                <h2>⚠️ READ CAREFULLY BEFORE USING THIS TOOL</h2>
+                <p>By accessing or using SMS Bomber Nepal, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use. If you do not agree, do not use this tool.</p>
+            </div>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="section-block">
+            <h2>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                Acceptance of Terms
+            </h2>
+            <p>These Terms of Use ("Terms") constitute a legally binding agreement between you ("User," "you," or "your") and SMS Bomber Nepal ("we," "our," or "us").</p>
+            <p>By accessing the website, using the SMS bombing tool, or clicking "Launch SMS Bomber," you confirm that you accept these Terms in full. If you disagree with any part of these Terms, you must immediately stop using the tool.</p>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section-block">
+            <h2>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><rect x="2" y="2" width="20" height="20" rx="2"/><circle cx="12" cy="12" r="3"/></svg>
+                Description of Service
+            </h2>
+            <p>SMS Bomber Nepal is an open-source, client-side web application that sends SMS messages to Nepal mobile numbers through third-party API providers. The tool is designed for <strong>educational and testing purposes only</strong>.</p>
+            <p>The service:</p>
+            <ul>
+                <li>Operates entirely within your web browser</li>
+                <li>Does not require registration or login</li>
+                <li>Makes direct API calls from your device to third-party services</li>
+                <li>Works exclusively with Nepal mobile numbers (NTC, Ncell, SmartCell)</li>
+                <li>Is provided free of charge under the MIT License</li>
+            </ul>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section-block">
+            <h2>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Prohibited Uses
+            </h2>
+            <p>The following uses of SMS Bomber Nepal are <strong>strictly prohibited</strong>:</p>
+            <ul>
+                <li><strong>Harassment:</strong> Using the tool to annoy, harass, threaten, or intimidate any person</li>
+                <li><strong>Spam:</strong> Sending unsolicited messages to numbers you do not own</li>
+                <li><strong>Fraud:</strong> Impersonating any service, company, or individual</li>
+                <li><strong>Illegal Activities:</strong> Any use that violates local, national, or international laws</li>
+                <li><strong>Commercial Use:</strong> Selling, reselling, or charging for access to this free tool</li>
+                <li><strong>Automated Abuse:</strong> Using bots or scripts to automate attacks beyond the tool's interface</li>
+                <li><strong>Network Disruption:</strong> Deliberately overwhelming telecom networks or API providers</li>
+                <li><strong>Testing on Others:</strong> Sending messages to any number you do not personally own</li>
+            </ul>
+
+            <div class="highlight-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <strong>VIOLATION WARNING:</strong> Misuse of this tool may violate Nepal's Electronic Transactions Act 2063, which carries penalties including imprisonment of up to 5 years and/or fines up to NPR 200,000.
+            </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="section-block">
+            <h2>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                User Responsibilities
+            </h2>
+            <p>As a user of SMS Bomber Nepal, you are solely responsible for:</p>
+            <ul>
+                <li><strong>Legal Compliance:</strong> Ensuring your use complies with all applicable laws in your jurisdiction</li>
+                <li><strong>Consent:</strong> Obtaining explicit permission before testing on any phone number you do not own</li>
+                <li><strong>Consequences:</strong> Accepting full responsibility for any legal, financial, or personal consequences resulting from your use of the tool</li>
+                <li><strong>Data Privacy:</strong> Understanding that phone numbers are transmitted to third-party APIs</li>
+                <li><strong>Ethical Use:</strong> Using the tool only for educational, research, or personal testing purposes</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>💡 Best Practice:</strong> Only test on your own phone number. This is the only way to ensure you are not violating any laws or causing harm to others.
+            </div>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="section-block">
+            <h2>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                Intellectual Property
+            </h2>
+            <p>SMS Bomber Nepal is open-source software licensed under the <strong>MIT License</strong>. This means:</p>
+            <ul>
+                <li>You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software</li>
+                <li>The software is provided "as is," without warranty of any kind</li>
+                <li>The full MIT License text is available in the project repository</li>
+                <li>You must include the original copyright notice and permission notice in any copies</li>
+            </ul>
+            <p>The name "SMS Bomber Nepal," the logo, and the Neubrutalism design are part of the project identity but are not trademarked.</p>
+        </div>
+
+        <!-- Section 6 -->
+        <div class="section-block">
+            <h2>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                Disclaimer of Warranties
+            </h2>
+            <p><strong>THE TOOL IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.</strong></p>
+            <p>To the fullest extent permitted by law, we disclaim all warranties, express or implied, including but not limited to:</p>
+            <ul>
+                <li>Warranties of merchantability</li>
+                <li>Fitness for a particular purpose</li>
+                <li>Non-infringement of third-party rights</li>
+                <li>Uninterrupted or error-free operation</li>
+                <li>Accuracy or reliability of results</li>
+                <li>Compatibility with any specific device or browser</li>
+                <li>Availability of third-party API services</li>
+            </ul>
+            <p>We do not guarantee that the SMS messages will be delivered, that the APIs will remain functional, or that the tool will work indefinitely.</p>
+        </div>
+
+        <!-- Section 7 -->
+        <div class="section-block">
+            <h2>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                Limitation of Liability
+            </h2>
+            <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW:</strong></p>
+            <ul>
+                <li>We shall NOT be liable for any direct, indirect, incidental, special, consequential, or punitive damages</li>
+                <li>We shall NOT be liable for any damages arising from the use or inability to use the tool</li>
+                <li>We shall NOT be liable for any legal consequences you face from using this tool</li>
+                <li>We shall NOT be liable for actions of third-party API providers</li>
+                <li>We shall NOT be liable for any telecommunications charges incurred</li>
+                <li>Your sole remedy for dissatisfaction is to stop using the tool</li>
+            </ul>
+
+            <div class="highlight-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <strong>YOU ASSUME ALL RISK:</strong> By using this tool, you acknowledge that you assume full responsibility for any and all risks, damages, or losses that may result from your use.
+            </div>
+        </div>
+
+        <!-- Section 8 -->
+        <div class="section-block">
+            <h2>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                Third-Party Services
+            </h2>
+            <p>This tool communicates with third-party API providers (ClampHook, Ambition Guru, MeroDoctor). We have no control over and assume no responsibility for:</p>
+            <ul>
+                <li>The availability or reliability of these third-party services</li>
+                <li>The content, privacy policies, or practices of these third-party services</li>
+                <li>Any damages or losses caused by these third-party services</li>
+                <li>Changes to their APIs that may break tool functionality</li>
+                <li>Rate limiting, blocking, or legal action taken by these services</li>
+            </ul>
+        </div>
+
+        <!-- Section 9 -->
+        <div class="section-block">
+            <h2>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Termination
+            </h2>
+            <p>We reserve the right to terminate or suspend access to the tool at any time, without prior notice, for any reason, including but not limited to:</p>
+            <ul>
+                <li>Violation of these Terms of Use</li>
+                <li>Abuse of the tool or third-party APIs</li>
+                <li>Legal requirements or law enforcement requests</li>
+                <li>Technical issues or maintenance</li>
+                <li>Discontinuation of the project</li>
+            </ul>
+            <p>Upon termination, your right to use the tool will immediately cease. All provisions of these Terms that by their nature should survive termination shall survive.</p>
+        </div>
+
+        <!-- Section 10 -->
+        <div class="section-block">
+            <h2>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><rect x="1" y="3" width="15" height="13"/><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="3" width="22" height="18" rx="2"/></svg>
+                Governing Law
+            </h2>
+            <p>These Terms shall be governed by and construed in accordance with the laws of Nepal, without regard to its conflict of law provisions.</p>
+            <p>Any disputes arising from these Terms or the use of this tool shall be subject to the exclusive jurisdiction of the courts of Nepal.</p>
+            <p>Users from other jurisdictions are responsible for compliance with their local laws.</p>
+        </div>
+
+        <!-- Section 11 -->
+        <div class="section-block">
+            <h2>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Changes to Terms
+            </h2>
+            <p>We reserve the right to modify or replace these Terms at any time. Changes will be posted on this page with an updated "Last Updated" date.</p>
+            <p>It is your responsibility to review these Terms periodically. Continued use of the tool after any changes constitutes acceptance of the new Terms.</p>
+            <p>If you do not agree with the revised Terms, you must immediately stop using the tool.</p>
+        </div>
+
+        <!-- Section 12 -->
+        <div class="section-block">
+            <h2>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Contact
+            </h2>
+            <p>For questions about these Terms of Use, please contact us through:</p>
+            <ul>
+                <li>GitHub Issues on the project repository</li>
+                <li>Community discussion forums (if available)</li>
+            </ul>
+            <p>As an open-source project, responses may be handled by community maintainers and may not be immediate.</p>
+        </div>
+
+        <!-- Section 13 -->
+        <div class="section-block">
+            <h2>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                Acknowledgment
+            </h2>
+            <p><strong>BY USING SMS BOMBER NEPAL, YOU ACKNOWLEDGE THAT:</strong></p>
+            <ul>
+                <li>You have read and understood these Terms of Use</li>
+                <li>You agree to be bound by these Terms</li>
+                <li>You understand this is an SMS bombing tool with real consequences</li>
+                <li>You will only test on your own phone number</li>
+                <li>You accept full legal responsibility for your actions</li>
+                <li>You understand we are NOT responsible for anything you do</li>
+                <li>You use this tool entirely at your own risk</li>
+            </ul>
+
+            <div class="highlight-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <strong>FINAL WARNING:</strong> This is an SMS bombing tool. Use it responsibly. Use it ethically. Use it ONLY on your own phone number. We bear NO responsibility for your actions.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p>© 2026 SMS Bomber Nepal — <a href="index.html">Home</a> — <a href="privacy.html">Privacy Policy</a> — MIT License</p>
+    </footer>
+
+</body>
+</html>
